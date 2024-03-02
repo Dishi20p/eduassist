@@ -1,0 +1,47 @@
+body{
+    background-color: #fff;
+    color:#000;
+}
+h1{
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f7f5f5; /* Navigation background color */
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    /* color: #fff; Navigation link color */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+#search {
+    text-align: center;
+    margin-bottom: 60px;
+    p.solid {border-style: solid;
+    border-color: #fff;
+    }
+}
+#Sites {
+    img{
+      text-align: center;
+      width: fit-content;
+      height: fit-content;
+      margin-right: 40px;
+      .asha {
+        width: 30px;
+        height: 30px;
+      }
+    }}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AbleAssist</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Resizing Options</title>
+  <style>
+    body {
+      font-size: 16px; /* Initial font size */
+    }
+
+    #text-resizer {
+      display: flex;
+      align-items: center;
+    }
+
+    #increase-font, #decrease-font {
+      cursor: pointer;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text-resizer">
+  <div id="decrease-font" onclick="changeFontSize(-2)">Decrease Font</div>
+  <div id="increase-font" onclick="changeFontSize(2)">Increase Font</div>
+</div>
+
+<script>
+  function changeFontSize(value) {
+    // Get the current font size
+    let currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+
+    // Calculate the new font size
+    let newSize = currentSize + value;
+
+    // Set the new font size with a limit to avoid extreme sizes
+    document.body.style.fontSize = Math.max(12, Math.min(24, newSize)) + 'px';
+  }
+</script>
+
+</body>
+</html>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    
+        <div class="nav"><h1 style="font-size: 2rem;">AbleAssist</h1></div>
+        <nav>
+            <ul>
+                <li><a href="webpages.html">Web</a></li>
+                <li><a href="Resources.html">Resources</a></li>
+                <li><a href="schemes.html">Schemes</a></li>
+                <li><a href="acts.html">Acts and Rights</a></li>
+            </ul>
+        </nav>
+     
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section for Search -->
+        <div>
+           <section id="search">
+            <h2>Search</h2>
+            <input type="text" placeholder="Search for a website or URL">
+            <button>Search</button>
+           </section>
+        </div>
+        <div>
+            <h4>Able Assist plays its role by collecting and disseminating data on education-related resources for differently-abled children. Consolidating this information on a singular platform to make it easier for parents, caregivers, and educators to access the resources and support they need.
+                By providing information on both rights and resources, Able Assist contributes to raising awareness about the available opportunities and assistance. This not only helps individuals directly involved with differently-abled children but also contributes to creating a more informed and supportive society.
+                </h4>
+            <h4>Parents, educators, and caregivers can find practical tools, inclusive teaching methods, and information on adaptive technologies to support students throughout their academic journey. </h4>
+            <h4>The content spans various subjects and addresses concerns related to creating inclusive learning environments.</h4>
+        </div>
+        <a href="link" target="_blank">
+          <img src="Image" alt="">
+          </a>
+        <!-- Section for Featured Content -->
+    </main>
+</body>
+</html>

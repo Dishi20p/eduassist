@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Resources</title>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Resizing Options</title>
+  <style>
+    body {
+      font-size: 16px; /* Initial font size */
+    }
+
+    #text-resizer {
+      display: flex;
+      align-items: center;
+    }
+
+    #increase-font, #decrease-font {
+      cursor: pointer;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text-resizer">
+  <div id="decrease-font" onclick="changeFontSize(-2)">Decrease Font</div>
+  <div id="increase-font" onclick="changeFontSize(2)">Increase Font</div>
+</div>
+
+<script>
+  function changeFontSize(value) {
+    // Get the current font size
+    let currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+
+    // Calculate the new font size
+    let newSize = currentSize + value;
+
+    // Set the new font size with a limit to avoid extreme sizes
+    document.body.style.fontSize = Math.max(12, Math.min(24, newSize)) + 'px';
+  }
+</script>
+
+</body>
+</html>
+</head>
+<section>
+  <div class="Heading">
+  <h1>Resources</h1>
+  </div>
+  <h3>National Institute of Open Schooling</h3>
+  <a href="https://www.youtube.com/channel/UCXBn5q8Zv4Bz-LZXWWD7Jxw/playlists" target="_blank">
+    <img src="Image/nios.png" alt="NIOS">
+  </a>
+  <h3>Sugamya Pustakalaya</h3>
+    <a href="https://vikaspedia.in/education/interactive-resources/sugamya-pustakalaya" target="_blank">
+        <img src="Image/sugamyapustakalaya.png" alt="Sugamya Pustakalaya">
+      </a>
+  <h3>AICTE</h3>
+  <a href="https://www.aicte-india.org/opportunities/students/facilities-differently-abled" target="_blank">
+    <img src="Image/aicte.png" alt="AICTE">
+    </a>
+  <h3>Unesco Digital Library</h3>
+    <a href="https://unesdoc.unesco.org/home" target="_blank">
+      <img src="Image/unescolib.jpeg" alt="UNESDOC">
+      </a>
+  <h3>Suvidya Digital Library</Source></h3>
+  <a href="https://www.samarthanam.org/digitallibrary/" target="_blank">
+    <img src="Image/suvidya.png" alt="suvidya library" width="100px" >
+    </a>
+</body>
+</html>

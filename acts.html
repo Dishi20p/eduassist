@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites</title>
+    <!-- Add any CSS files here -->
+    <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Resizing Options</title>
+  <style>
+    body {
+      font-size: 16px; /* Initial font size */
+    }
+
+    #text-resizer {
+      display: flex;
+      align-items: center;
+    }
+
+    #increase-font, #decrease-font {
+      cursor: pointer;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text-resizer">
+  <div id="decrease-font" onclick="changeFontSize(-2)">Decrease Font</div>
+  <div id="increase-font" onclick="changeFontSize(2)">Increase Font</div>
+</div>
+
+<script>
+  function changeFontSize(value) {
+    // Get the current font size
+    let currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+
+    // Calculate the new font size
+    let newSize = currentSize + value;
+
+    // Set the new font size with a limit to avoid extreme sizes
+    document.body.style.fontSize = Math.max(12, Math.min(24, newSize)) + 'px';
+  }
+</script>
+</body>
+</html>
+</head>
+<body>
+  <h1>Acts and Rights</h1>
+  <h2>ARTICLE 41</h2>
+  <h3>Article 41 of the Directive Principles of State Policy (DPSP) states that the State shall make effective provision for securing the right to work, to education and to public assistance in cases of unemployment, old age, sickness and disablement, within the limits of its economic capacity and development. The subject of ‘relief of the disabled and unemployable’ is specified in the state list of the Seventh Schedule of the constitution.</h3>
+  <h2>RIGHTS OF PERSONS WITH DISABILITIES ACT, 2016</h2>
+  <h3>The Rights of Persons with Disabilities (RPwD) Act was enacted in the year 2016 and came into force from 19th April, 2017. It replaced the Persons with Disabilities (Equal Opportunities, Protection of Rights and Full Participation) Act, 1995. The objective of the RPwD Act is to ensure that all persons with disabilities can lead their lives with dignity, without discrimination and  with equal opportunities. The Act lays down specific provisions to uphold such rights. It incorporates the rights of persons with disabilities covered under the United Nations Convention on the Rights of Persons with Disabilities (UNCRPD), to which India is a signatory. </h3>
+  <h3>Persons with disabilities have the right to equality, dignity and respect for integrity: Section 3(1) of the RPwD Act requires the appropriate government to ensure that persons with disabilities enjoy the right to equality, life with dignity and respect for his or her integrity equally with others. The Act ensures the rights of women and children with disabilities: Section 4 states that the appropriate government and local authorities shall take measures to ensure that women and children with disabilities enjoy their rights equally with others. The section further states that all children with disabilities have the right to freely express their views on all matters affecting them and that, for this, support will be provided to keep in view their age and disability.Persons with disabilities have the right to live in the community. Section 5(2) of the Act states that appropriate government shall endeavour that persons with disabilities are not forced to live in any particular living arrangement and are given access to a range of inhouse, residential and other community support services, including personal assistance necessary to support living with due regard to age and gender. The Act provides protection to persons with disabilities from being subjected to torture, cruel, inhuman or degrading treatment: Section 6 of the Act requires the government to take measures to prevent torture, cruel, inhuman or degrading treatment and ensure that no person with disability shall be a subject of any research without his or her free and informed consent. This is to be obtained through accessible modes, means and formats of communication and prior permission of a Committee for Research on Disability. The Act ensures protection of persons with disabilities from abuse, violence and exploitation: Section 7 of the Act states that victims of violence, abuse or exploitation shall be rescued, protected and rehabilitated. The government is also obligated to create awareness about the provisions and make it available to the public. Any person or registered organization who or which has reason to believe that an act of abuse, violence or exploitation has been, is being, or is likely to be committed may inform the Executive Magistrate of the incident who thereafter is obligated to rescue, protect, rehabilitate and provide maintenance to the victim. The police on receipt of complaint or knowing about such incidents are obligated to inform the victim of their rights to apply for protection, free legal aid, right to file a complaint and the particulars of the Executive Magistrate and the nearest organization/institution working for the rehabilitation of persons with disabilities.  </h3>
+  <h2>EDUCATIONAL RIGHTS OF PERSONS  WITH DISABILITIES</h2>
+  <h3>The RPwD Act, in Section 16, requires the appropriate government and the local authorities to ensure that all educational institutions funded or recognised by them provide inclusive education to the children with disabilities.</h3>
+</body>
+</html>

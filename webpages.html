@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites</title>
+    <!-- Add any CSS files here -->
+    <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Resizing Options</title>
+  <style>
+    body {
+      font-size: 16px; /* Initial font size */
+    }
+
+    #text-resizer {
+      display: flex;
+      align-items: center;
+    }
+
+    #increase-font, #decrease-font {
+      cursor: pointer;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text-resizer">
+  <div id="decrease-font" onclick="changeFontSize(-2)">Decrease Font</div>
+  <div id="increase-font" onclick="changeFontSize(2)">Increase Font</div>
+</div>
+
+<script>
+  function changeFontSize(value) {
+    // Get the current font size
+    let currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+
+    // Calculate the new font size
+    let newSize = currentSize + value;
+
+    // Set the new font size with a limit to avoid extreme sizes
+    document.body.style.fontSize = Math.max(12, Math.min(24, newSize)) + 'px';
+  }
+</script>
+
+</body>
+</html>
+</head>
+<body>
+  <section id="Sites">
+  <div>
+    <!-- Add your content here -->
+    <div class="Web"> <h1>Websites</h1></div>
+     <!--Links for Schools-->
+     <div>
+        <h2>Links For Schools</h2>
+          </a>
+     <a href="https://schools.org.in/bengaluru-u-north/29280601727/shradhanjali-integrated-school.html" target="_blank">
+      <img src="Image/shradhanjali.jpeg" alt="Shradhanjali School">
+      <a href="https://www.mbcnschool.org/" target="_blank">
+        <img src="Image/matabhagwati.png" alt="mata bhagwati">
+      </a>
+      <a href="https://www.ashaforautism.com/" target="_blank">
+        <img src="Image/asha2.jpeg" alt="ASHA">
+      </a>
+      <a href="https://tamana.ngo/autism-centre/" target="_blank">
+        <img src="Image/tamanna.jpg" alt="Tamanna" width="30">
+      </a>
+      <a href="https://amarjyotirehab.org/" target="_blank">
+        <img src="Image/amarjyoti.png" alt="amarjyoti">
+      </a>
+      </div>
+     <!--Link for Programmes-->
+     <div>
+        <h2>Links for Programmes</h2>
+     <a href="https://samagra.education.gov.in/index.html" target="_blank">
+        <img src="Image/samagra.jpeg" alt="Samagra Siksha Abhiyan" width="40">
+      </a>
+     </div>
+     <!--Link for NGOs-->
+    <div>
+    <h2>Links for NGOs</h2>
+    <a href="https://www.apd-india.org/" target="_blank">
+        <img src="Image/apd.png" alt="APD">
+        </a>
+           <!-- <h3>Sikshit Yuwa Sewa Samiti</h3>-->
+            <a href="https://syss.1ngo.in/"" target="_blank">
+              <img src="Image/syss.png" alt="Sikshit Yuwa Sewa Samiti" width="40"> 
+    <a href="https://www.narayanseva.org/donate/contribute-us/?gclid=CjwKCAiAloavBhBOEiwAbtAJO0cyI47PJDbwZWaYO3o0HkrB18pgtW6-6bl7-yOrO3bw_mdt7kkOEBoCFYYQAvD_BwE" target="_blank">
+                <img src="Image/narayan.jpeg" alt="narayan">
+    </a>
+    </a>
+    <a href="https://www.helpageindia.org" target="_blank">
+      <img src="Image/helpage.png" alt="Help age">
+      <a href="https://www.amcin.org/" target="_blank">
+        <img src="Image/amc.jpeg" alt="amc">
+    </div>
+  
+    <!-- Add any JavaScript files here -->
+    <script src="script.js" defer></script>
+  </section>
+  
+</body>
+</html>

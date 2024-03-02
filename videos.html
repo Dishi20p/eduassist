@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websites</title>
+    <!-- Add any CSS files here -->
+    <link rel="stylesheet" href="style.css">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Resizing Options</title>
+  <style>
+    body {
+      font-size: 16px; /* Initial font size */
+    }
+
+    #text-resizer {
+      display: flex;
+      align-items: center;
+    }
+
+    #increase-font, #decrease-font {
+      cursor: pointer;
+      margin: 0 10px;
+      padding: 5px 10px;
+      border: 1px solid #333;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text-resizer">
+  <div id="decrease-font" onclick="changeFontSize(-2)">Decrease Font</div>
+  <div id="increase-font" onclick="changeFontSize(2)">Increase Font</div>
+</div>
+
+<script>
+  function changeFontSize(value) {
+    // Get the current font size
+    let currentSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+
+    // Calculate the new font size
+    let newSize = currentSize + value;
+
+    // Set the new font size with a limit to avoid extreme sizes
+    document.body.style.fontSize = Math.max(12, Math.min(24, newSize)) + 'px';
+  }
+</script>
+</body>
+</html>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    video {
+      width: 10%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<h2>HTML Video Example</h2>
+
+<video controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+</video>
+<video>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+</video>
+<video>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+</video>
+<video>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+</video>
+
+</body>
+</html>
+<body>
+  <section id="pdfs">
+  <div>
+    <h1>PDFs</h1>
+    
+     
+</body>
+</html>
